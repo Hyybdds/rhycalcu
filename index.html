@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<div class="calculator">
+    <form action="">
+<div class="display">
+    <input type="text" name="display" value="0" disabled>
+</div>
+
+<div>
+    <input type="button" value="AC" onclick="clearDisplay()">
+    <input type="button" value="+/-" onclick="toggleSign()">
+    <input type="button" value="%" onclick="appendOperator('%')">
+    <input type="button" value="/" onclick="appendOperator('/')">
+</div>
+
+<div>
+    <input type="button" value="7" onclick="appendDisplay(7)">
+    <input type="button" value="8" onclick="appendDisplay(8)">
+    <input type="button" value="9" onclick="appendDisplay(9)">
+    <input type="button" value="*" onclick="appendOperator('*')">
+</div>
+
+<div>
+    <input type="button" value="4" onclick="appendDisplay(4)">
+    <input type="button" value="5" onclick="appendDisplay(5)">
+    <input type="button" value="6" onclick="appendDisplay(6)">
+    <input type="button" value="-" onclick="appendOperator('-')">
+</div>
+
+<div>
+    <input type="button" value="1" onclick="appendDisplay(1)">
+    <input type="button" value="2" onclick="appendDisplay(2)">
+    <input type="button" value="3" onclick="appendDisplay(3)">
+    <input type="button" value="+" onclick="appendOperator('+')">
+</div>
+
+<div>
+    <input type="button" value="0" class="zero" onclick="appendNumber(0)">
+    <input type="button" value="." onclick="appendDecimal()">
+    <input type="button" value="=" onclick="calculateResult()">
+</div>
+</form>
+</div>
+</div>
+</body>
+</html>
+
+<script src="script.js"></script>
